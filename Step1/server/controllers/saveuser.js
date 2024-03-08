@@ -31,7 +31,7 @@ function saveUserData(userData) {
   console.log(userData);
 
   const sql = 'INSERT INTO users SET ?';
-  const values = {id,gender, name_title, name_first, name_last, country,dob:dateOfBirth, uuid, email, username, password, md5, sha1, sha256, picture_large:large, picture_medium:medium, picture_thumbnail:thumbnail};
+  const values = {id,gender,name_title,name_first,name_last, country,dob:dateOfBirth, uuid, email, username, password, md5, sha1, sha256, picture_large:large, picture_medium:medium, picture_thumbnail:thumbnail};
 
   connection.query(sql, values, (error, results, fields) => {
     if (error) {
