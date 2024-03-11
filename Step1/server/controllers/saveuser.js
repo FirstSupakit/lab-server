@@ -22,7 +22,7 @@ connection.connect((err) => {
 
 function saveUserData(userData) {
   const { gender, name, location, email, login, picture ,dob} = userData;
-  const { title, first, last } = name;
+  const { name_title, name_first, name_last } = name;
   const { country } = location;
   const { username, password, md5, sha1, sha256, uuid } = login;
   const { medium, large, thumbnail } = picture;
